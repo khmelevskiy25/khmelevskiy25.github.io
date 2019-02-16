@@ -6,3 +6,17 @@
 	top: -45px;
 }
 }
+@media screen and (min-width: 951px) and (max-width: 1024px) {
+.btn-header {
+    top: 363px;
+}
+.header-img > img:first-child {
+	left: 40%;
+}
+.left, .right {
+	min-height: auto;
+}
+.text-slide {
+    margin: auto;
+}
+}
