@@ -85,6 +85,7 @@ h3 {
 }
 .title {
 	width: 60%;
+	margin-top: 8.7%;
 }
 .img-dots {
 	width: 30%;
@@ -99,7 +100,7 @@ h3 {
 	font-size: 24px;
     line-height: 150%;
     color: #214b51;
-    margin: 0 0 51px 47px;
+    margin: 0 0 51px 0;
 }
 .header-img {
 	max-width: 100%;
@@ -121,7 +122,7 @@ h3 {
 .header-img > img:first-child {
     position: absolute;
     top: 317px;
-    left: 692px;
+    left: 43%;
 }
 .btn-header {
 	width: 185px;

@@ -1,0 +1,8 @@
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+	.logo {
+    margin: 0 250px 0 11px;
+}
+.logo-footer {
+	top: -45px;
+}
+}
