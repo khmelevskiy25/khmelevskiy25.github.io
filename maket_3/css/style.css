@@ -42,7 +42,7 @@ header#header {
     padding: 2px 0;
 }
 .show-menu {
-	right: 0px!important;
+	transform: translateX(0%)!important;
 }
 .menu {
     width: 260px;
@@ -52,8 +52,10 @@ header#header {
     background: #fff;
     z-index: 99;
     height: 100vh;
-    right: -306px;
+    right: 0;
     top: 0;
+    transform: translateX(118%);
+    transition: all .5s cubic-bezier(0.25, 0.1, 1, 0.31);
 }
 .close {
     display: block;
@@ -166,5 +168,7 @@ ul > li:hover {
 	color: #fff;
 	font-size: 40px;
 	cursor: pointer;
+	padding: 40px;
+    margin-right: 40px;
 	transition: all 0.2s linear;
 }

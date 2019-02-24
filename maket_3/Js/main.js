@@ -5,13 +5,31 @@ $(document).ready(function(){
 	$('.close').on('click', function(){
 		$('.menu').removeClass('show-menu');
 	});
+	
+	$('.item').each(function(){
+	  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+	});
 
-
-(function(){var bodyEl=document.body,content=document.querySelector('.content-wrap'),openbtn=document.getElementById('open-button'),closebtn=document.getElementById('close-button'),isOpen=false;function init(){initEvents();}
-function initEvents(){openbtn.addEventListener('click',toggleMenu);if(closebtn){closebtn.addEventListener('click',toggleMenu);}}
-function toggleMenu(){if(isOpen){classie.remove(bodyEl,'show-menu');}
-else{classie.add(bodyEl,'show-menu');}
-isOpen=!isOpen;}
-init();})();
+	anime.timeline({loop: true})
+	  .add({
+	    targets: '.item .letter',
+	    translateX: [40,0],
+	    translateZ: 0,
+	    opacity: [0,1],
+	    easing: "easeOutExpo",
+	    duration: 1200,
+	    delay: function(el, i) {
+	      return 500 + 30 * i;
+	    }
+	  }).add({
+	    targets: '.item .letter',
+	    translateX: [0,-30],
+	    opacity: [1,0],
+	    easing: "easeInExpo",
+	    duration: 1100,
+	    delay: function(el, i) {
+	      return 100 + 30 * i;
+	    }
+	  });
 
 });
