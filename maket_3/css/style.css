@@ -46,8 +46,7 @@ header#header {
 }
 .menu {
     width: 260px;
-    position: relative;
-    position: absolute;
+    position: fixed;
     padding: 40px 0 0 20px;
     background: #fff;
     z-index: 99;
