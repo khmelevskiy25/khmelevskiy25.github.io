@@ -39,6 +39,15 @@ p {
 a {
 	color: #121825;
 }
+.en > a > img,
+.ru > a > img {
+    width: 30px;
+    margin: 0 10px;
+}
+.lang {
+	display: flex;
+	justify-content: flex-end;
+}
 #header {
 	width: 100%;
 	background-image: url(../img/home-bg.png);
