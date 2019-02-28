@@ -272,7 +272,7 @@ h2 > a {
     	flex-basis: 100%;
 }
 	.buttons > a > img {
-	    width: 85%;
+	    width: 84%;
 }
 	.buttons > a  {
 	    width: 70%;
@@ -341,9 +341,8 @@ h2 > a {
 	h2 > a {
 		font-size: 30px;
 }
-	.video1-1,.video2,.video3 {
-		height: 480px;
-		margin: 0 0 20px;
+	.video1-1, .video1-2, .video1-3 {
+    	height: 250px;
 }
 }
 @media (max-width: 768px) {
