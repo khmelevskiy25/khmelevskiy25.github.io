@@ -21,16 +21,19 @@ h2 {
 	font-weight: bold;
 	color: #fff;
 	margin: 0 0 40px;
+	text-shadow: 4px 4px 4px #121825;
 }
 h3 {
 	font-size: 48px;
 	font-weight: 700;
 	margin: 0 0 40px;
+	text-shadow: 1px 1px 2px #121825;
 }
 h4 {
 	font-size: 36px;
 	font-weight: 700;
 	margin: 0 0 40px;
+	text-shadow: 1px 2px 2px #121825;
 }
 p {
 	font-size: 32px;
@@ -59,7 +62,7 @@ a {
 	max-width: 1500px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 35px;
 }
 .container_inf {
 	max-width: 1840px;
@@ -84,6 +87,9 @@ a {
 .wrap > div {
 	margin: 0 0 40px;
 }
+.wrap > div > p {
+    margin: 0 0 15px;
+}
 .wrap > div:nth-child(2) > h2 {
 	text-align: center;
 }
@@ -93,15 +99,21 @@ a {
 .wrap > div:nth-child(even) {
 	flex-basis: 50%;
 }
-.wrap > div:nth-child(3) > p {
-	line-height: 46px;
+.wrap > div:nth-child(2) > p {
+	line-height: 55px;
 }
-.description-games {
-	margin: 40px 0;
-	line-height: 50px;
+.wrap > div:nth-child(3) > a > p {
+	line-height: 46px;
+	margin: 0 0 40px;
+}
+.wrap > div:last-child > p {
+	line-height: 45px;
 }
 .contact span {
 	display: block;
+}
+.description-games > p {
+    line-height: 60px;
 }
 .item {
 	text-decoration: underline;
@@ -141,10 +153,10 @@ a {
 }
 .wrap-screen > div {
 	flex-basis: 49%;
-	margin: 0 0 10px;
+	margin: 0 0 30px;
 }
 .wrap-screen img {
-	max-width: 714px;
+	max-width: 695px;
 }
 .code-to-do[tabindex="0"] {
    cursor: zoom-in; 
@@ -185,4 +197,133 @@ img.code-to-do[tabindex="0"]:focus ~ * {
 h2 > a {
     text-decoration: underline;
     font-size: 42px;
+}
+.link-dow {
+	text-shadow: 2px 2px 4px #121825;
+}
+/*adaptive*/
+@media (min-width: 769px) and (max-width: 1024px){
+	.buttons > a > img {
+    	width: 87%;
+}
+	.buttons {
+		height: 55vh;
+	}
+	.wrap {
+		text-align: inherit;
+	}
+	.wrap > div:nth-child(even) {
+    	flex-basis: 100%;
+}
+	.wrap > div:nth-child(odd) {
+    	flex-basis: 100%;
+}
+	.wrap-screen {
+		justify-content: center;
+	}
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+	.buttons > a > img {
+    	width: 92%;
+}
+.wrap-screen {
+		justify-content: center;
+	}
+	.contact > p > a {
+    	font-size: 29px;
+}
+}
+@media (min-width: 426px) and (max-width: 768px) {
+.buttons {
+		height: 23vh;
+}
+	.wrap-screen > div {
+		flex-basis: 100%;
+}
+	.wrap-screen img {
+		width: 100%;
+}
+	.wrap-screen {
+		justify-content: center;
+}
+	.wrap > div:nth-child(odd) {
+		flex-basis: 100%;
+}
+	.wrap > div:nth-child(even) {
+		flex-basis: 100%;
+}
+	.wrap {
+		text-align: inherit;
+}
+	.contact > p > a {
+    font-size: 23px;
+}
+	h2 {
+		font-size: 55px;
+}
+	.video2, .video3 {
+    	flex-basis: 100%;
+}
+	.buttons > a > img {
+	    width: 85%;
+}
+	.buttons > a  {
+	    width: 70%;
+}
+	.buttons {
+    height: 36vh;
+}
+}
+@media (min-width: 300px) and (max-width: 425px) {
+	.buttons {
+		height: 17vh;
+}
+	.wrap-screen > div {
+		flex-basis: 100%;
+}
+	.wrap-screen img {
+		width: 100%;
+}
+	.wrap-screen {
+		justify-content: center;
+}
+	.wrap > div:nth-child(odd) {
+		flex-basis: 100%;
+}
+	.wrap > div:nth-child(even) {
+		flex-basis: 100%;
+}
+	.wrap {
+		text-align: inherit;
+}
+	.contact > p > a {
+    font-size: 19px;
+}
+	h2 {
+		font-size: 40px;
+}
+	.video2, .video3 {
+    	flex-basis: 100%;
+}
+	.buttons > a > img {
+	    width: 85%;
+}
+	.buttons > a  {
+	    width: 70%;
+}
+	.buttons {
+    	height: 36vh;
+}
+	p {
+	    font-size: 23px;
+}
+	h3 {
+		font-size: 36px;
+	}
+	h4 {
+		font-size: 30px;
+	}
+	h2 > a {
+		font-size: 30px;
+	}
 }
