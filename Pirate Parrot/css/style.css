@@ -21,7 +21,7 @@ h2 {
 	font-weight: bold;
 	color: #fff;
 	margin: 0 0 40px;
-	text-shadow: 4px 4px 4px #121825;
+	text-shadow: 2px 2px 2px #121825;
 }
 h3 {
 	font-size: 48px;
@@ -138,7 +138,7 @@ a {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.video1 {
+.video1,.video2,.video3 {
 	flex-basis: 100%;
 	margin: 0 0 20px;
 }
@@ -226,7 +226,7 @@ h2 > a {
 	.buttons > a > img {
     	width: 92%;
 }
-.wrap-screen {
+	.wrap-screen {
 		justify-content: center;
 }
 	.contact > p > a {
@@ -234,8 +234,11 @@ h2 > a {
 }
 }
 @media (min-width: 426px) and (max-width: 768px) {
-.buttons {
+	.buttons {
 		height: 23vh;
+}
+	.buttons > a:last-child > img {
+    	width: 74%;
 }
 	.wrap-screen > div {
 		flex-basis: 100%;
@@ -260,8 +263,12 @@ h2 > a {
 }
 	h2 {
 		font-size: 55px;
+		color: #121825;
 }
-	.video2, .video3 {
+	.wrap > div:nth-child(2) > h2 {
+    	text-align: inherit;
+}
+	.video2,.video3 {
     	flex-basis: 100%;
 }
 	.buttons > a > img {
@@ -273,10 +280,16 @@ h2 > a {
 	.buttons {
     	height: 36vh;
 }
+	.video1-1 {
+		height: 450px;
+	}
 }
 @media (min-width: 300px) and (max-width: 425px) {
 	.buttons {
 		height: 17vh;
+}
+	.buttons > a:last-child > img {
+    	width: 74%;
 }
 	.wrap-screen > div {
 		flex-basis: 100%;
@@ -301,6 +314,10 @@ h2 > a {
 }
 	h2 {
 		font-size: 40px;
+		color: #121825;
+}
+	.wrap > div:nth-child(2) > h2 {
+    	text-align: inherit;
 }
 	.video2, .video3 {
     	flex-basis: 100%;
@@ -310,9 +327,7 @@ h2 > a {
 }
 	.buttons > a  {
 	    width: 70%;
-}
-	.buttons {
-    	height: 36vh;
+	    text-align: center;
 }
 	p {
 	    font-size: 23px;
@@ -325,5 +340,17 @@ h2 > a {
 }
 	h2 > a {
 		font-size: 30px;
+}
+	.video1-1,.video2,.video3 {
+		height: 480px;
+		margin: 0 0 20px;
+}
+}
+@media (max-width: 768px) {
+.buttons img:hover {
+	transform: scale(1);
+}
+h3,h4,h2,.link-dow {
+	text-shadow: none;
 }
 }
