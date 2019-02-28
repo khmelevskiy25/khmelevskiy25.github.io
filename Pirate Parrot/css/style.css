@@ -228,7 +228,7 @@ h2 > a {
 }
 .wrap-screen {
 		justify-content: center;
-	}
+}
 	.contact > p > a {
     	font-size: 29px;
 }
@@ -256,7 +256,7 @@ h2 > a {
 		text-align: inherit;
 }
 	.contact > p > a {
-    font-size: 23px;
+    	font-size: 23px;
 }
 	h2 {
 		font-size: 55px;
@@ -271,7 +271,7 @@ h2 > a {
 	    width: 70%;
 }
 	.buttons {
-    height: 36vh;
+    	height: 36vh;
 }
 }
 @media (min-width: 300px) and (max-width: 425px) {
@@ -297,7 +297,7 @@ h2 > a {
 		text-align: inherit;
 }
 	.contact > p > a {
-    font-size: 19px;
+    	font-size: 19px;
 }
 	h2 {
 		font-size: 40px;
@@ -319,11 +319,11 @@ h2 > a {
 }
 	h3 {
 		font-size: 36px;
-	}
+}
 	h4 {
 		font-size: 30px;
-	}
+}
 	h2 > a {
 		font-size: 30px;
-	}
+}
 }
