@@ -20,7 +20,7 @@
 		<div class="container">
 			<div class="lang">
 				<div class="en">
-					<a href="files/pageEN.html">
+					<a href="../files/pageEN.html">
 					<img src="../img/en.png" alt="icon-en">
 					</a>
 				</div>
@@ -112,7 +112,7 @@
 				<div><img class="code-to-do" tabindex="0" src="../img/Scr-4.png" alt="Screenshots game Unity"></div>
 			</div>
 		</div>
-		<h2><a href="../files/Pirate_Parrot_ Company_Info_RU_ENG.docx" download="" class="button-download" title="click to download">Click here to download the press kit.</a></h2>
+		<h2><a href="https://drive.google.com/drive/folders/1bFdchjYfTaimbHySYfa0EvicN7sgEISe?fbclid=IwAR0CZBLuzKnW70rpH3T_2lpcsXOtgATBqT5YjugJoIhWvAfgWBwN9tsHtUc"class="button-download" title="Сlick">Google disk</a></h2>
 	</srction>
 	
 
@@ -124,5 +124,10 @@
 <a class="btn-top" href="javaScript:void(0)"><i class="fas fa-angle-up"></i></a>
 	<script src="../js/jQuery 3.3.1.js" defer></script>
 	<script src="../js/main.js" defer></script>
+	<script>
+		$('.en > a').on('click', function(){
+				$(this).attr('href', '../files/pageEN.html')
+			});
+	</script>
 </body>
 </html>
