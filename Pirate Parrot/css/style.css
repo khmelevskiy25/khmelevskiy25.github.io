@@ -15,28 +15,26 @@ body {
 	font-family: Tahoma, sans-serif;
 	overflow-x: hidden;
 	color: #121825;
+	letter-spacing: 2px;
 }
 h2 {
-	font-size: 72px;
+	font-size: 65px;
 	font-weight: bold;
 	color: #fff;
 	margin: 0 0 40px;
-	text-shadow: 2px 2px 2px #121825;
 }
 h3 {
 	font-size: 48px;
 	font-weight: 700;
 	margin: 0 0 40px;
-	text-shadow: 1px 1px 2px #121825;
 }
 h4 {
 	font-size: 36px;
 	font-weight: 700;
 	margin: 0 0 40px;
-	text-shadow: 1px 2px 2px #121825;
 }
 p {
-	font-size: 32px;
+	font-size: 25px;
 	text-align: inherit;
 }
 a {
