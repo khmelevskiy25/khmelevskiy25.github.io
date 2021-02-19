@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+}
+section {
+    margin-bottom: 100px;
+}
+li {
+    list-style: none;
+}
+.nav ul {
+    min-height: 60px;
+    margin: 0;
+}
+.nav {
+    background: #333;
+}
+.nav a {
+    color: #fff;
+    padding: 20px;
+}
+.top_info {
+    min-height: 140px;
+    background: #fff;
+}
+.marquee {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.marquee * {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 21s infinite linear;
+    animation: scroll 21s infinite linear;
+}
+.marquee *:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+i.far.fa-clock,
+i.fas.fa-phone-alt {
+    color: #f36009;
+    margin-right: 10px;
+}
+i.fas.fa-mobile-alt,
+i.fas.fa-map-marker-alt,
+footer i.far.fa-envelope {
+    color: #f36009;
+}
+.header_img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 700px;
+    background-image: url(../img/test_img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header_img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.header_img p {
+    color: #fff;
+    z-index: 1;
+    font-size: 2.5rem;
+}
+h1 {
+    font-size: 3.5rem!important;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 1;
+}
+h2.title {
+    position: relative;
+    text-align: center;
+    margin: 70px 0;
+}
+h2.title::after {
+    position: absolute;
+    content: '';
+    bottom: -50%;
+    width: 50px;
+    height: 5px;
+    background: #EB8209;
+    left: 48%;
+}
+.card {
+    background-color:#f38609!important;
+}
+.card_product {
+    margin-bottom: 15px;
+}
+button.btn.btn-link {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.card-body > a {
+    margin: 15px 0;
+}
+.product {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 2px;
+    transition: .3s ease;
+    min-height: 140px;
+    background: #fff;
+}
+.product-title {
+    flex-basis: 75%;
+    font-weight: 700;
+    color: #333;
+}
+.product:hover {
+    border: 2px solid #fde037;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.36);
+}
+.about_us {
+    min-height: 500px;
+    background: #fff;
+}
+.about_us > div {
+    padding: 60px;
+}
+.img_about {
+    background-image: url(../img/test_img2.jpg);
+    background-size: cover;
+}
+.about_us p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+img.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.comment_text {
+    max-width: 430px;
+    text-align: center;
+    margin: 40px 0;
+}
+.feedback {
+    padding: 100px 0;
+    background: #fff;
+    margin-bottom: 0!important;
+}
+.feedback > .title {
+    margin: 0!important;
+}
+.form_block {
+    padding: 3% 15%!important;
+}
+.wrap_contact > div:last-child {
+    font-size: 20rem;
+}
+footer {
+    min-height: 500px;
+    background: #333;
+}
+footer > .container > div {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+footer > .container > div > .icon {
+    font-size: 5rem;
+}
+img.card-img-top {
+    min-height: 190px;
+    background: #fff;
+}
+.card-body {
+    color: #2d2b2b;
+}
+section.products {
+    padding: 100px 90px 0 90px;
+}
+section.products > .card {
+    margin: 10px;
+}
+section.single_product {
+    margin-top: 40px;
+}
+.img_product > img {
+    width: 100%;
+    max-height: 700px;
+}
+.description_product {
+    padding: 0 20px;
+}
+ul.nav.nav-tabs {
+    margin-top: 120px;
+}
+.price_product, .text_product {
+    margin-top: 30px;
+}
+.description_product .nav {
+    background: transparent!important;
+}
+/* Animation */
+@-webkit-keyframes scroll {
+    0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    }
+    100% {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0)
+    }
+   }
+   @keyframes scroll {
+    0% {
+    transform: translate(0, 0);
+    }
+    100% {
+    transform: translate(-100%, 0)
+    }
+}
+   
