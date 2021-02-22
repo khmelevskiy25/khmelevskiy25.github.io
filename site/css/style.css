@@ -9,36 +9,42 @@ li {
 }
 .nav ul {
     min-height: 60px;
+    padding: 0 5%;
     margin: 0;
 }
-.nav {
+.info {
     background: #333;
+    padding: 20px;
 }
 .nav a {
-    color: #fff;
+    color: #333;
     padding: 20px;
+}
+.nav li {
+    position: relative;
+}
+.nav li::after {
+    content: '/';
+    position: absolute;
+    color: #333;
+}
+.nav li:last-child:after {
+    display: none;
 }
 .top_info {
     min-height: 140px;
     background: #fff;
 }
-.marquee {
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+.tel {
+    margin-left: 40px;
 }
-.marquee * {
-    display: inline-block;
-    padding-left: 100%;
-    -webkit-animation: scroll 21s infinite linear;
-    animation: scroll 21s infinite linear;
-}
-.marquee *:hover {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+.working_hours > span:first-child,
+.tel > span:first-child {
+    margin-right: 10px;
 }
 i.far.fa-clock,
-i.fas.fa-phone-alt {
+i.fas.fa-phone-alt,
+i.fas.fa-search {
     color: #f36009;
     margin-right: 10px;
 }
@@ -47,6 +53,12 @@ i.fas.fa-map-marker-alt,
 footer i.far.fa-envelope {
     color: #f36009;
 }
+.working_hours span {
+    color: #fff;
+}
+.logo img {
+    max-width: 130px;
+}
 .header_img {
     position: relative;
     display: flex;
@@ -54,9 +66,8 @@ footer i.far.fa-envelope {
     justify-content: center;
     flex-direction: column;
     min-height: 700px;
-    background-image: url(../img/test_img.jpg);
+    background-image: url(../img/home_img.png);
     background-size: cover;
-    background-attachment: fixed;
 }
 .header_img::before {
     content: '';
@@ -93,7 +104,7 @@ h2.title::after {
     left: 48%;
 }
 .card {
-    background-color:#f38609!important;
+    background-color:#007abc!important;
 }
 .card_product {
     margin-bottom: 15px;
@@ -131,7 +142,7 @@ button.btn.btn-link {
     padding: 60px;
 }
 .img_about {
-    background-image: url(../img/test_img2.jpg);
+    background-image: url(../img/test.png);
     background-size: cover;
 }
 .about_us p {
@@ -163,19 +174,19 @@ img.photo {
     font-size: 20rem;
 }
 footer {
-    min-height: 500px;
+    min-height: 200px;
     background: #333;
 }
 footer > .container > div {
     color: #fff;
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
 }
 footer > .container > div > .icon {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 img.card-img-top {
-    min-height: 190px;
+    max-height: 390px;
     background: #fff;
 }
 .card-body {
@@ -206,23 +217,3 @@ ul.nav.nav-tabs {
 .description_product .nav {
     background: transparent!important;
 }
-/* Animation */
-@-webkit-keyframes scroll {
-    0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    }
-    100% {
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0)
-    }
-   }
-   @keyframes scroll {
-    0% {
-    transform: translate(0, 0);
-    }
-    100% {
-    transform: translate(-100%, 0)
-    }
-}
-   

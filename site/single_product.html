@@ -11,38 +11,39 @@
 <body>
 <div class="wrapper">
     <header>
-        <div class="nav">
-            <div class="container">
-                <ul class="d-flex align-items-center">
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="#">Про нас</a></li>
-                    <li><a href="#">Продукція</a></li>
-                    <li><a href="#">Відгуки про нас</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="top_info d-flex align-items-center">
-            <div class="container d-flex align-items-center">
-                <div class="logo col-md-3">
-                    <p style="font-size: 50px;">LOGO</p>
-                </div>
-                <div class="marquee col-md-5">
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="info col-md-4">
-                    <div class="working_hours d-flex align-items-center flex-column">
-                        <span><i class="far fa-clock"></i>Часи роботи:</span>
-                        <span>ПН-ПТ 09:00 - 18:00</span>
-                        <span>СБ-НД: Вихідний</span>
-                    </div>
-                    <div class="tel d-flex align-items-center flex-column">
-                        <span><i class="fas fa-phone-alt"></i><a href="tel:+380677777777">(067) 777-77-77</a></span>
-                    </div>
+        <div class="info d-flex align-items-center">
+            <div class="working_hours d-flex col-md-10">
+                <span><i class="far fa-clock"></i>Часи роботи:</span>
+                <span>ПН-ПТ 09:00 - 18:00</span>
+                <span>СБ-НД: Вихідний</span>
+                <div class="tel">
+                    <span><i class="fas fa-phone-alt"></i>Телефон:</span>
+                    <span><a href="tel:+380677777777">(067) 777-77-77</a></span>
                 </div>
             </div>
+            <div class="search col-md-2 d-flex align-items-center">
+                <i class="fas fa-search"></i> <input class="form-control" id="myInput" type="text" placeholder="пошук..">
+            </div>
         </div>
-</header>
+            <div class="top_info d-flex align-items-center">
+                <div class="container d-flex align-items-center">
+                    <div class="logo col-md-3">
+                        <a href="index.html"> <img src="img/test_logo.png" alt="logo"></a>
+                    </div>
+                    <div class="nav col-md-9">
+                        <div class="container">
+                            <ul class="d-flex align-items-center justify-content-between">
+                                <li><a href="index.html">Головна</a></li>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Продукція</a></li>
+                                <li><a href="#">Відгуки про нас</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
     <div class="container">
         <section class="single_product d-flex flex-wrap"> 
             <div class="img_product col-md-6">
