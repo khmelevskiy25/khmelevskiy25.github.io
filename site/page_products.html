@@ -21,11 +21,63 @@
                 <span><a href="tel:+380677777777">(067) 777-77-77</a></span>
             </div>
         </div>
-        <div class="search col-md-2 d-flex align-items-center">
-            <i class="fas fa-search"></i> <input class="form-control" id="myInput" type="text" placeholder="пошук..">
+        <div class="modal_form col-md-2 d-flex align-items-center">
+            <div class="bd-example">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Замовте зворотній дзвінок</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Вкажіть свій номер телефону і ми вам передзвонимо</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="recipient-name" class="form-control-label">Телефон:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="form-group">
+                            <label for="message-text" class="form-control-label">Повідомлення:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                        <button type="button" class="btn btn-primary">Надіслати</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
-        <div class="top_info d-flex align-items-center">
+    <div class="pos-f-t">
+        <nav class="navbar navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4">
+            <div class="nav-mobile">
+                <div class="container">
+                    <ul class="menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="#about_us">Про нас</a></li>
+                        <li><a href="#we_offer">Продукція</a></li>
+                        <li><a href="#comments">Відгуки про нас</a></li>
+                        <li><a href="#footer">Контакти</a></li>
+                    </ul>
+                </div>     
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="top_info align-items-center">
             <div class="container d-flex align-items-center">
                 <div class="logo col-md-3">
                     <a href="index.html"> <img src="img/test_logo.png" alt="logo"></a>
@@ -34,13 +86,14 @@
                     <div class="container">
                         <ul class="d-flex align-items-center justify-content-between">
                             <li><a href="index.html">Головна</a></li>
-                            <li><a href="#">Про нас</a></li>
-                            <li><a href="#">Продукція</a></li>
-                            <li><a href="#">Відгуки про нас</a></li>
-                            <li><a href="#">Контакти</a></li>
+                            <li><a href="#about_us">Про нас</a></li>
+                            <li><a href="#we_offer">Продукція</a></li>
+                            <li><a href="#comments">Відгуки про нас</a></li>
+                            <li><a href="#footer">Контакти</a></li>
                         </ul>
                     </div>
                 </div>
+                
             </div>
         </div>
 </header>
