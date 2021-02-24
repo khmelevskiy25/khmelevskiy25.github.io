@@ -243,6 +243,9 @@ ul.menu li {
     justify-content: flex-end!important;
     padding: 1.5rem 2rem!important;
 }
+.icon_feedback_block {
+    text-align: center;
+}
 @media(min-width: 981px) {
     .nav-mobile,
     .pos-f-t {
@@ -252,5 +255,39 @@ ul.menu li {
 @media(max-width: 980px) {
     .top_info {
         display: none!important;
+    }
+    .modal_form {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .header_img {
+        text-align: center;
+    }
+    section#about_us {
+        flex-direction: column-reverse;
+    }
+    .img_about {
+        min-height: 300px;
+    }
+    .icon_feedback_block {
+        display: none!important;
+    }
+    .working_hours {
+        flex-direction: column;
+        text-align: center;
+    }
+    section.products {
+        padding: 100px 0;
+    }
+}
+@media(max-width: 767px) {
+    h1 {
+        font-size: 1.5rem!important;
+    }
+    .header_img p {
+        font-size: 1.5rem;
+    }
+    .slick-arrow {
+        display: none;
     }
 }
