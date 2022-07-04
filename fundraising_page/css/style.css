@@ -10,6 +10,7 @@ body {
     background-size: cover;
     font-family: 'Lato', sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -36,5 +37,34 @@ p.discription > a {
     margin-top: 20px;
     color: red;
     font-size: 33px;
+    display: inline-flex;
+}
+.scale {
+    transition: .3s;
+   }
+   .scale:hover {
+    transform: scale(2);
+}
+.photo {
+    z-index: 2;
+}
+.photo > img {
+    max-width: 250px;
+    max-height: 180px;
+    min-height: 180px;
+    margin-bottom: 30px;
+}
+p.details_info {
+    color: #fff;
+    z-index: 1;
+    max-width: 30%;
+    font-size: 25px;
+    line-height: 50px;
+}
+b,.details > a {
+    color: red;
+}
+span.details {
+    padding-top: 20px;
     display: inline-flex;
 }
