@@ -38,6 +38,7 @@ p.discription > a {
     color: red;
     font-size: 33px;
     display: inline-flex;
+    width: 100%;
 }
 .scale {
     transition: .3s;
@@ -67,4 +68,18 @@ b,.details > a {
 span.details {
     padding-top: 20px;
     display: inline-flex;
+}
+@media (max-width: 1440px) {
+    .photo, .discription {
+        padding: 0 15%;
+    }
+    .discription {
+        max-width: 100%;
+    }
+}
+@media (max-width: 1024px)
+{
+    .photo {
+        display: none;
+    }
 }
