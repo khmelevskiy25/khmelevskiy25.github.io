@@ -1,0 +1,120 @@
+.main-container 
+{
+    height: 100vh;
+}
+.buttons > a > button {
+    width: 16rem;
+    padding: 5%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.link-clients,.link-couriers {
+    display: inline-flex;
+    text-decoration: none;
+}
+a.link-couriers {
+    margin-right: 40px;
+}
+section#shortcut .accordion,
+section#answersquestions .accordion {
+    min-width: 100%;
+}
+/*style menu*/
+.shortcut-container {
+    padding: 60px 30px 60px 30px;
+}
+body {
+    font-family: sans-serif;
+}
+section {
+    color: #fff;
+}
+.main {
+    background-color: #1A9354;
+}
+.answersquestions {
+    background-color: #965BB2;
+}
+.usefullinks {
+    background-color: #E9781D;
+}
+.generalinformation {
+    background-color: #39c8cf;
+}
+.addarticle {
+    background-color: #263847;
+}
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+.menu {
+    position: fixed;
+    left: 0; top: 7%;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: .5s;
+    transform: translateX(-100%);
+    z-index: 99;
+}
+.menu_active {
+    transform: translateX(0%);
+}
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    flex-direction: column;
+}
+.menu-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #263847;
+    font-weight: 900;
+}
+.menu-btn {
+    position: absolute;
+    right: -35px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background-color: #333;
+}
+.content {
+    position: relative;
+    transition: .5s;
+    z-index: 0;
+}
+.content_active {
+    transform: translate(30%)
+}
+/*end style menu */
+a.navbar-brand {
+    border: 2px solid green;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.btn-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	background: rgba(0,0,0,0.5);
+	font-size: 30px;
+	color: #fff;
+	padding: 10px 20px 10px 20px;
+}
+.btn-top:hover {
+	background: rgba(0,0,0,0.9);
+}
