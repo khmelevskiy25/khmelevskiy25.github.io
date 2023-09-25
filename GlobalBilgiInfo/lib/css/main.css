@@ -16,7 +16,9 @@ a.link-couriers {
     margin-right: 40px;
 }
 section#shortcut .accordion,
-section#answersquestions .accordion {
+section#answersquestions .accordion,
+section#generalinformation .accordion,
+section#usefullinks .accordion{
     min-width: 100%;
 }
 /*style menu*/
