@@ -4,7 +4,7 @@ async function getPosts()
     let posts = await res.json();
 
     posts.forEach((post) => {
-      if(post.post_type == "Шорткати")
+      if(post.post_type == "Шорткати" && post.user_role == "Клієнт")
       {
         document.querySelector('.accordion-shortcut').innerHTML += `
         <div class="accordion-item">
@@ -19,7 +19,7 @@ async function getPosts()
         </div>
         `
       }
-      else if(post.post_type == "Відповіді на запитання")
+      else if(post.post_type == "Відповіді на запитання" && post.user_role == "Клієнт")
       {
         document.querySelector('.accordion-answersquestions').innerHTML += `
         <div class="accordion-item">
@@ -34,7 +34,7 @@ async function getPosts()
         </div>
         `
       }
-      else if(post.post_type == "Корисні посилання")
+      else if(post.post_type == "Корисні посилання" && post.user_role == "Клієнт")
       {
         document.querySelector('.accordion-usefullinks').innerHTML += `
         <div class="accordion-item">
@@ -49,7 +49,7 @@ async function getPosts()
         </div>
         `
       }
-      else if(post.post_type == "Загальна інформація")
+      else if(post.post_type == "Загальна інформація" && post.user_role == "Клієнт")
       {
         document.querySelector('.accordion-generalinformation').innerHTML += `
         <div class="accordion-item">
