@@ -21,7 +21,45 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="https://khmelevskiy25.github.io/GlobalBilgiInfo/">Головна</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://khmelevskiy25.github.io/GlobalBilgiInfo/page/clients.html">Клієнти</a>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" onclick="openFormAdd()" class="btn btn-success">Додати</button>
+                  </li>
                 </ul>
+                <div class="container d-flex justify-content-center align-items-center">
+                  <div class="popup-form-add" id="myForm-add">
+                    <form style="padding: 5% 1% 5% 1%;">
+                      <div class="mb-3">
+                        <label for="SelectaRole" class="form-label">Виберіть роль</label>
+                        <select class="form-select" id="role">
+                          <option>Клієнт</option>
+                          <option>Кур'єр</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="SelectaRole" class="form-label">Тип статті</label>
+                        <select class="form-select" id="type">
+                          <option>Шорткати</option>
+                          <option>Відповіді на запитання</option>
+                          <option>Корисні посилання</option>
+                          <option>Загальна інформація</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Заголовок статті</label>
+                        <input type="text" id="title" class="form-control title-form" >
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Контен</label>
+                        <textarea type="text" id="content" class="form-control content-form" rows="10"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-success" onclick="submitForm()">Додаты</button>
+                      <button class="btn btn-danger close-form-button" onclick="closeFormAdd()"><i class="fa-solid fa-xmark"></i></button>
+                    </form>
+                  </div>
+                </div>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Шукати</button>
@@ -38,7 +76,6 @@
              <a href="#answersquestions">Відповіді на запитання</a>
              <a href="#usefullinks">Корисні посилання</a>
              <a href="#generalinformation">Загальна інформація</a>
-             <a href="#addarticle">Додати статтю</a>
          </nav>
         </div>
         <div class="content">
@@ -64,39 +101,43 @@
          </section>
          <section class="addarticle" id="addarticle">
           <div class="container d-flex justify-content-center align-items-center">
-            <form class="col-md-10" style="padding: 5% 1% 5% 1%;" id="myForm">
-              <div class="mb-3">
-                <label for="SelectaRole" class="form-label">Виберіть роль</label>
-                <select class="form-select" id="role">
-                  <option>Клієнт</option>
-                  <option>Кур'єр</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="SelectaRole" class="form-label">Тип статті</label>
-                <select class="form-select" id="type">
-                  <option>Шорткати</option>
-                  <option>Відповіді на запитання</option>
-                  <option>Корисні посилання</option>
-                  <option>Загальна інформація</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Заголовок статті</label>
-                <input type="text" id="title" class="form-control" >
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Контен</label>
-                <textarea type="text" id="content" class="form-control" rows="10"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" onclick="submitForm()">Додати</button>
-            </form>
+            <div class="popup-form-edit" id="myForm">
+              <form style="padding: 5% 1% 5% 1%;">
+                <div class="mb-3">
+                  <label for="SelectaRole" class="form-label">Виберіть роль</label>
+                  <select class="form-select" id="role-edit">
+                    <option>Клієнт</option>
+                    <option>Кур'єр</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="SelectaRole" class="form-label">Тип статті</label>
+                  <select class="form-select" id="type-edit">
+                    <option>Шорткати</option>
+                    <option>Відповіді на запитання</option>
+                    <option>Корисні посилання</option>
+                    <option>Загальна інформація</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Заголовок статті</label>
+                  <input type="text" id="title-edit" class="form-control title-form" >
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Контен</label>
+                  <textarea type="text" id="content-edit" class="form-control content-form" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning" onclick="submitForm()">Редагувати</button>
+                <button class="btn btn-danger close-form-button" onclick="closeForm()"><i class="fa-solid fa-xmark"></i></button>
+              </form>
+            </div>
           </div>
          </section>
         </div>
     </div>
 <a class="btn-top" href="javaScript:void(0)"><i class="fas fa-angle-up"></i></a>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://kit.fontawesome.com/91126d1114.js" crossorigin="anonymous"></script>
 <script src="../lib/js/request-couriers.js"></script>
 <script src="../lib/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

@@ -120,3 +120,43 @@ a.navbar-brand {
 .btn-top:hover {
 	background: rgba(0,0,0,0.9);
 }
+.wrap-content {
+    width: 100%!;
+    display: flex;
+    justify-content: space-between;
+}
+.feature_icons {
+    padding: 0 10px 0 10px;
+}
+.feature_icons i {
+    margin-left: 11px;
+    transition: .3s auto;
+    font-size: 17px!important;
+    color: #052c65!important;
+}
+.feature_icons i:hover {
+    color: green!important;
+}
+div#myForm,div#myForm-add {
+    background: #272727;
+}
+div#myForm-add label{
+    color: #fff;
+}
+.popup-form-edit,.popup-form-add {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 210;
+}
+.close-form-button {
+    position: absolute;
+    top: -16px;
+    right: -9px;
+}
