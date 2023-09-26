@@ -30,7 +30,7 @@ function submitForm() {
   var content = contentActicle.value;
 
   // Вызываем вашу функцию и передаем значения в неё
-  processFormData(role, type, title, content);
+  //processFormData(role, type, title, content);
 
   postRequest(role, type, title, content);
 }
