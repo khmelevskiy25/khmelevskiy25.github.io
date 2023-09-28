@@ -109,7 +109,7 @@ if (result) {
     alert("Видалення скасовано.");
 }
 }
-
+document.addEventListener('DOMContentLoaded', function() {
 function search() {
 var keyword = document.getElementById('searchInput').value.toLowerCase();
 var elementsToSearch = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, b, strong');
@@ -154,7 +154,7 @@ elementsToSearch.forEach(function(element) {
         }
     }
 });
-}
+}});
 
 function openFormAdd() 
 {
