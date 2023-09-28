@@ -80,6 +80,7 @@ async function getPosts()
 }
 getPosts();
 
+
 function getValue(id)
 {
     var class_title = ".title-article-" + id;
@@ -95,11 +96,55 @@ function getValue(id)
     {
         var input_value = document.getElementById('title-edit');
         var body_value = document.getElementById('content-edit');
+        var id = document.getElementById('id_edit');
         input_value.value = content_title.textContent;
         body_value.value = content_body.textContent;
+        id.value = article_id;
         openForm();
     }
 }
+
+function sendPatchRequest(url, data) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('PATCH', url, true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                // Обработка успешного ответа
+                console.log('Успешный PATCH-запрос:', JSON.parse(xhr.responseText));
+            } else {
+                // Обработка ошибок
+                console.error('Ошибка HTTP:', xhr.status, xhr.statusText);
+            }
+        }
+    };
+
+    xhr.send(JSON.stringify(data));
+}
+
+function editPost() {
+
+    var article_id = document.getElementById("id_edit");
+    var selectaRole = document.getElementById("role-edit");
+    var typeActicle = document.getElementById("type-edit");
+    var titleActicle = document.getElementById("title-edit");
+    var contentActicle = document.getElementById("content-edit");
+
+    // Извлекаем значения из полей формы
+    var id = article_id.value;
+    var role = selectaRole.value;
+    var type = typeActicle.value;
+    var title = titleActicle.value;
+    var content = contentActicle.value;
+
+    const url = 'https://www.specposhiv.kiev.ua/api/posts';
+    const data = { 'id' : id, 'user_role' : role, 'post_type' : type, 'post_title' : title, 'post_body' : content};
+    console.log(data);
+    sendPatchRequest(url, data);
+}
+
 function openForm() 
 {
     var form = document.querySelector('.popup-form-edit');

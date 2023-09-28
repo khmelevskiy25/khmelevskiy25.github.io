@@ -104,6 +104,7 @@
             <div class="popup-form-edit" id="myForm">
               <form style="padding: 5% 1% 5% 1%;">
                 <div class="mb-3">
+                  <input type="text" id="id_edit" class="form-control article-id" >
                   <label for="SelectaRole" class="form-label">Виберіть роль</label>
                   <select class="form-select" id="role-edit">
                     <option>Клієнт</option>
@@ -127,7 +128,8 @@
                   <label class="form-label">Контен</label>
                   <textarea type="text" id="content-edit" class="form-control content-form" rows="10"></textarea>
                 </div>
-                <button type="submit" class="btn btn-warning" onclick="submitForm()">Редагувати</button>
+                <div clss="error-message mb-3" style="font-size: 1.2em; color: red; font-weight: bold; text-align: center;border: 1px solid; margin-bottom: 10px; display: none;"></div>
+                <button type="submit" class="btn btn-warning" onclick="editPost()">Редагувати</button>
                 <button class="btn btn-danger close-form-button" onclick="closeForm()"><i class="fa-solid fa-xmark"></i></button>
               </form>
             </div>

@@ -160,3 +160,7 @@ div#myForm-add label{
     top: -16px;
     right: -9px;
 }
+#id_edit
+{
+    display: none;
+}

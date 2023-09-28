@@ -16,6 +16,8 @@ $btnTop.on("click", function(){
 $("html,body").animate({scrollTop:0}, 1000);
 });
 
+document.getElementById("id_edit").readOnly = true;
+
 function submitForm() {
   // Получаем доступ к форме и её элементам по их id
   var selectaRole = document.getElementById("role");
@@ -31,7 +33,6 @@ function submitForm() {
 
   // Вызываем вашу функцию и передаем значения в неё
   //processFormData(role, type, title, content);
-
   postRequest(role, type, title, content);
 }
 
@@ -43,6 +44,7 @@ function processFormData(role, type,title, content) {
   console.log("post_body:", content);
   // Здесь вы можете выполнить любую логику, связанную с данными из формы
 }
+
 async function postRequest(role, type, title, content)
 {
   // Создайте объект FormData и добавьте данные в него
