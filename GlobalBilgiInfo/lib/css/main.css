@@ -162,3 +162,12 @@ div#myForm-add label{
 {
     display: none;
 }
+.main-page
+{
+    background-color: #FFCF1D;
+}
+.link-couriers,
+.link-clients
+{
+    background-color: #4AB398!important;
+}
