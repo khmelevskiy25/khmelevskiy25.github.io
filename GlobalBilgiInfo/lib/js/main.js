@@ -15,7 +15,7 @@ if ($(window).scrollTop() >= 900){
 $btnTop.on("click", function(){
 $("html,body").animate({scrollTop:0}, 1000);
 });
-
+const baseURL = "https://www.specposhiv.kiev.ua/api/posts";
 document.getElementById("id_edit").readOnly = true;
 
 function submitForm() {
@@ -61,7 +61,7 @@ async function postRequest(role, type, title, content)
   var xhr = new XMLHttpRequest();
 
   // Настройте запрос
-  xhr.open('POST', 'https://www.specposhiv.kiev.ua/api/posts', true);
+  xhr.open('POST', baseURL, true);
 
   // Определите обработчик события для отслеживания состояния запроса
   xhr.onreadystatechange = function () {
@@ -74,6 +74,42 @@ async function postRequest(role, type, title, content)
   // Отправьте объект FormData в запросе
   xhr.send(formData);
 }
+
+function sendDeleteRequest(url) {
+var xhr = new XMLHttpRequest();
+xhr.open('DELETE', url, true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+            // Обработка успешного ответа
+            console.log('Успешный DELETE-запрос:', JSON.parse(xhr.responseText));
+        } else {
+            // Обработка ошибок
+            console.error('Ошибка HTTP:', xhr.status, xhr.statusText);
+        }
+    }
+};
+
+xhr.send();
+}
+
+function confirmDelete($id) {
+// Всплывающее окно с подтверждением
+var result = window.confirm("Ви впевнені, що хочете видалити пост?");
+
+// Если пользователь нажал "ОК", продолжаем с удалением
+if (result) {
+    const url = baseURL + '/' + $id;
+    sendDeleteRequest(url);
+    alert("Пост видалено!"); // Замените эту строку на ваш код удаления
+} else {
+    // Пользователь нажал "Отмена", ничего не делаем
+    alert("Видалення скасовано.");
+}
+}
+
 function openFormAdd() 
 {
   var form = document.querySelector('.popup-form-add');

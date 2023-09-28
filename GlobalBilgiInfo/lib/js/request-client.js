@@ -12,7 +12,7 @@ async function getPosts()
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">\
                     <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
                         <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
-                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
                     </div>
                 </button>
             </h2>
@@ -30,7 +30,7 @@ async function getPosts()
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                     <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
                         <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
-                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
                     </div>
                 </button>
             </h2>
@@ -48,7 +48,7 @@ async function getPosts()
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                     <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
                         <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
-                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
                     </div>
                 </button>
             </h2>
@@ -66,7 +66,7 @@ async function getPosts()
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                     <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
                         <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
-                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
                     </div>
                 </button>
             </h2>
