@@ -141,7 +141,6 @@ function editPost() {
 
     const url = 'https://www.specposhiv.kiev.ua/api/posts';
     const data = { 'id' : id, 'user_role' : role, 'post_type' : type, 'post_title' : title, 'post_body' : content};
-    console.log(data);
     sendPatchRequest(url, data);
 }
 
