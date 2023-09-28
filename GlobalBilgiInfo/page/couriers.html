@@ -60,10 +60,8 @@
                     </form>
                   </div>
                 </div>
-                <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Шукати</button>
-                </form>
+                  <button class="btn btn-outline-success" onclick="search()">Шукати</button>
               </div>
             </div>
           </nav>
@@ -79,6 +77,7 @@
          </nav>
         </div>
         <div class="content">
+        <div id="searchResults" style="padding: 20px; width: 100%; color: black; min-height: 150px; background-color: cornflowerblue; font-size: 1.7em; text-align: center;display: none; font-weight: bold;"></div>
          <section class="main" id="shortcut">
              <div class="container-fluid d-flex justify-content-center align-items-start shortcut-container">
                 <div class="accordion accordion-shortcut-couriers"></div>
