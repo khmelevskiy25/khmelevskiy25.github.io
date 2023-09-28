@@ -132,14 +132,14 @@ function editPost() {
     var contentActicle = document.getElementById("content-edit");
 
     // Извлекаем значения из полей формы
-    var id = article_id.value;
+    var id_article = article_id.value;
     var role = selectaRole.value;
     var type = typeActicle.value;
     var title = titleActicle.value;
     var content = contentActicle.value;
 
     const url = 'https://www.specposhiv.kiev.ua/api/posts';
-    const data = { 'id' : id, 'user_role' : role, 'post_type' : type, 'post_title' : title, 'post_body' : content};
+    const data = { id : id_article, user_role : role, post_type : type, post_title : title, post_body : content};
     console.log(data);
     sendPatchRequest(url, data);
 }
