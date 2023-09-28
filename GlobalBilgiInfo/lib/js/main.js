@@ -109,52 +109,51 @@ if (result) {
     alert("Видалення скасовано.");
 }
 }
-document.addEventListener('DOMContentLoaded', function() {
 function search() {
-var keyword = document.getElementById('searchInput').value.toLowerCase();
-var elementsToSearch = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, b, strong');
-var searchResultsContainer = document.getElementById('searchResults');
-
-// Очищаем результаты перед каждым новым поиском
-searchResultsContainer.innerHTML = '';
-
-// Set для отслеживания уникальных результатов
-var uniqueResults = new Set();
-
-elementsToSearch.forEach(function(element) {
-    // Функция для проверки текста внутри элемента, включая вложенные элементы
-    function checkText(node) {
-        if (node.nodeType === 3) {
-            // Текстовый узел
-            return node.nodeValue.toLowerCase().includes(keyword);
-        } else if (node.nodeType === 1) {
-            // Элемент
-            return Array.from(node.childNodes).some(checkText);
-        }
-        return false;
-    }
-
-    // Проверяем текст внутри элемента и его вложенных элементов
-    if (checkText(element)) {
-        // Формируем уникальный ключ для каждого результата
-        var resultKey = element.tagName + ': ' + element.textContent;
-
-        // Проверяем, был ли уже такой результат
-        if (!uniqueResults.has(resultKey)) {
-            var resultItem = document.createElement('div');
-            resultItem.textContent = resultKey;
-
-            // Добавляем отдельную строку (блок) для каждого результата
-            searchResultsContainer.style.display = "block";
-            searchResultsContainer.appendChild(resultItem);
-            searchResultsContainer.appendChild(document.createElement('br'));
-
-            // Добавляем результат в набор для отслеживания уникальности
-            uniqueResults.add(resultKey);
-        }
-    }
-});
-}});
+  var keyword = document.getElementById('searchInput').value.toLowerCase();
+  var elementsToSearch = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, b, strong');
+  var searchResultsContainer = document.getElementById('searchResults');
+  
+  // Очищаем результаты перед каждым новым поиском
+  searchResultsContainer.innerHTML = '';
+  
+  // Set для отслеживания уникальных результатов
+  var uniqueResults = new Set();
+  
+  elementsToSearch.forEach(function(element) {
+      // Функция для проверки текста внутри элемента, включая вложенные элементы
+      function checkText(node) {
+          if (node.nodeType === 3) {
+              // Текстовый узел
+              return node.nodeValue.toLowerCase().includes(keyword);
+          } else if (node.nodeType === 1) {
+              // Элемент
+              return Array.from(node.childNodes).some(checkText);
+          }
+          return false;
+      }
+  
+      // Проверяем текст внутри элемента и его вложенных элементов
+      if (checkText(element)) {
+          // Формируем уникальный ключ для каждого результата
+          var resultKey = element.tagName + ': ' + element.textContent;
+  
+          // Проверяем, был ли уже такой результат
+          if (!uniqueResults.has(resultKey)) {
+              var resultItem = document.createElement('div');
+              resultItem.textContent = resultKey;
+  
+              // Добавляем отдельную строку (блок) для каждого результата
+              searchResultsContainer.style.display = "block";
+              searchResultsContainer.appendChild(resultItem);
+              searchResultsContainer.appendChild(document.createElement('br'));
+  
+              // Добавляем результат в набор для отслеживания уникальности
+              uniqueResults.add(resultKey);
+          }
+      }
+  });
+  }
 
 function openFormAdd() 
 {
