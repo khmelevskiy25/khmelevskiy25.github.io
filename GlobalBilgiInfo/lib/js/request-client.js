@@ -16,7 +16,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
@@ -34,7 +34,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
@@ -52,7 +52,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
@@ -70,7 +70,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
@@ -88,7 +88,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
@@ -106,7 +106,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
@@ -124,7 +124,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
@@ -142,7 +142,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
@@ -160,7 +160,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
@@ -178,7 +178,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
@@ -196,7 +196,7 @@ async function getPosts()
                     </div>
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
             </div>
         </div>
