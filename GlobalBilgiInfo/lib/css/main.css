@@ -46,6 +46,27 @@ section {
 .addarticle {
     background-color: #263847;
 }
+.courierredirects {
+    background-color: #4AB398;
+}
+.clientspushes {
+    background-color: #FFCF1D;
+}
+.kr {
+    background-color: #adc8df;
+}
+.anxiety {
+    background-color: #ebab4a;
+}
+.procedurelimits {
+    background-color: #3d2653;
+}
+.sisat {
+    background-color: #b2a2c0;
+}
+.glovertree {
+    background-color: #779978;
+}
 .wrapper {
     position: relative;
     overflow-x: hidden;
@@ -170,4 +191,7 @@ div#myForm-add label{
 .link-clients
 {
     background-color: #4AB398!important;
+}
+nav.navbar.navbar-expand-lg.bg-body-tertiary,.menu.menu_active {
+    background-color: #FFCF1D!important;
 }

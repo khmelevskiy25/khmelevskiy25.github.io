@@ -76,10 +76,137 @@ async function getPosts()
         </div>
         `
       }
+      else if(post.post_type == "Редіректи кур'єра (боти,пошта)" && post.user_role == "Кур'єр")
+      {
+        document.querySelector('.accordion-courierredirects-couriers').innerHTML += `
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
+                        <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
+                    </div>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
+            </div>
+        </div>
+        `
+      }
+      else if(post.post_type == "Пуші клієнта" && post.user_role == "Кур'єр")
+      {
+        document.querySelector('.accordion-clientspushes-couriers').innerHTML += `
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
+                        <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
+                    </div>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
+            </div>
+        </div>
+        `
+      }
+      else if(post.post_type == "КР" && post.user_role == "Кур'єр")
+      {
+        document.querySelector('.accordion-kr-couriers').innerHTML += `
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
+                        <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
+                    </div>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
+            </div>
+        </div>
+        `
+      }
+      else if(post.post_type == "Тривога" && post.user_role == "Кур'єр")
+      {
+        document.querySelector('.accordion-anxiety-couriers').innerHTML += `
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
+                        <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
+                    </div>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
+            </div>
+        </div>
+        `
+      }
+      else if(post.post_type == "Ліміти+процедури" && post.user_role == "Кур'єр")
+      {
+        document.querySelector('.accordion-procedurelimits-couriers').innerHTML += `
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
+                        <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
+                    </div>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
+            </div>
+        </div>
+        `
+      }
+      else if(post.post_type == "Сісат" && post.user_role == "Кур'єр")
+      {
+        document.querySelector('.accordion-sisat-couriers').innerHTML += `
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
+                        <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
+                    </div>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
+            </div>
+        </div>
+        `
+      }
+      else if(post.post_type == "Glover tree (кр який відображаються в додатку кур'єра)" && post.user_role == "Кур'єр")
+      {
+        document.querySelector('.accordion-glovertree-couriers').innerHTML += `
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <div class="wrap-content d-flex justify-content-space-between" style="width: 100%;">
+                        <div class="title-article-${post.id}"><b>${post.post_title}</b></div>
+                        <div class="feature_icons"><i onclick="getValue(${post.id})" class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash" onclick="confirmDelete(${post.id})"></i></div>
+                    </div>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body content-article-${post.id}"><strong>${post.post_body}</strong></div>
+            </div>
+        </div>
+        `
+      }
     })
 }
 getPosts();
 
+const baseURl = 'https://www.specposhiv.kiev.ua/api/posts';
 
 function getValue(id)
 {
@@ -138,7 +265,7 @@ function editPost() {
     var title = titleActicle.value;
     var content = contentActicle.value;
 
-    const url = 'https://www.specposhiv.kiev.ua/api/posts';
+    const url = baseURl;
     const data = {'id' : id, 'user_role' : role, 'post_type' : type, 'post_title' : title, 'post_body' : content};
     sendPatchRequest(url, data);
 }
