@@ -73,7 +73,7 @@ section {
 }
 .menu {
     position: fixed;
-    left: 0; top: 7%;
+    left: 0; top: 6%;
     width: 30%;
     height: 100vh;
     display: flex;
