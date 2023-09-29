@@ -70,6 +70,7 @@ section {
 .wrapper {
     position: relative;
     overflow-x: hidden;
+    background: #ffcf1d;
 }
 .menu {
     position: fixed;
